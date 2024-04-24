@@ -1,19 +1,18 @@
-html, 
-body {
+html, body{
     margin: 0;
     padding: 0;
 }
-body {
+body{
     font-size: 18px;
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
-.container {
-    max-width: 1440px;
+.container{
+    min-width: 1440px;
     width: 96%;
     margin: 0 auto;
 }
-.hero {
+.hero{
     background-image: url(../images/herobg.jpg);
     background-size: cover;
     min-height: 100vh;
@@ -26,12 +25,60 @@ body {
     justify-content: space-between;
 }
 .header a{
-font-weight: 500;
-font-size: 20px;
-line-height: 130%;
-color: #fff;
-text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    text-decoration: none;
 }
-.header a+a{
+.header a + a{
     margin-left: 40px;
+}
+.center {
+    color: #ffffff;
+    padding: 30px 0 20px;
+    width: 953px;
+    height: 356px;
+    margin-top: 100px;
+}
+button {
+    width: 297px;
+    height: 53px;
+    top: 598px;
+    left: 240px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px;
+    margin-top: 50px;
+    text-align: center;
+    color: #115793; 
+    font-size: 18px; 
+    line-height: 27px;
+    font-weight: 500;
+    border: none;
+}
+.bottom {
+    position: relative;
+}
+.circle {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 30%;
+    margin-top: 220px;
+    color: #ffffff;
+    position: absolute;
+}
+.arrow {
+    padding-left: 30px;
+    padding-top: 250px;
+}
+.slovo {
+    color: #ffffff;
+    margin: 0;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
 }
