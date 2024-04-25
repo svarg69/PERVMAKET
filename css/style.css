@@ -16,6 +16,8 @@ body{
     background-image: url(../images/herobg.jpg);
     background-size: cover;
     min-height: 100vh;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 .header{
     padding: 30px 0 20px;
@@ -34,10 +36,23 @@ body{
 .header a + a{
     margin-left: 40px;
 }
+h1{
+    font-size: 50px; 
+    font-weight: 700; 
+    line-height: 60px;
+    margin: 0;
+}
+.center p{
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 27px;
+    margin: 20px 0px 50px;
+    max-width: 831px;
+}
 .center {
     color: #ffffff;
     padding: 30px 0 20px;
-    width: 953px;
+    max-width: 953px;
     height: 356px;
     margin-top: 100px;
 }
@@ -58,27 +73,56 @@ button {
     border: none;
 }
 .bottom {
-    position: relative;
+  display: flex;
+  align-items: center;
+
 }
 .circle {
     width: 84px;
     height: 84px;
     border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 30%;
-    margin-top: 220px;
-    color: #ffffff;
-    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
-.arrow {
-    padding-left: 30px;
-    padding-top: 250px;
-}
+
 .slovo {
     color: #ffffff;
     margin: 0;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+}
+.center a{
+    display: block;
+    max-width: 297px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 20px 24px;
+    line-height: 150%;
+    color: #115793;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.gift .container{
+    border: 1px solid blue;
+}
+.block{
+    height: 200px;
+    background-color: red;
+}
+
+.gift-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gift_item{
+    width: 24%;
 }
