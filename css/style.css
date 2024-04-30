@@ -1,85 +1,92 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-size: 18px;
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
-.container{
-    min-width: 1440px;
+
+.container {
+    max-width: 1440px;
     width: 96%;
     margin: 0 auto;
 }
-.hero{
+
+.hero {
     background-image: url(../images/herobg.jpg);
     background-size: cover;
     min-height: 100vh;
     padding-bottom: 60px;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     padding: 30px 0 20px;
     border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
-.header a{
+
+.header a {
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
     color: #fff;
     text-decoration: none;
 }
-.header a + a{
+
+.header a+a {
     margin-left: 40px;
 }
-h1{
-    font-size: 50px; 
-    font-weight: 700; 
-    line-height: 60px;
-    margin: 0;
-}
-.center p{
-    font-size: 18px; 
-    font-weight: 400; 
-    line-height: 27px;
-    margin: 20px 0px 50px;
-    max-width: 831px;
-}
+
 .center {
-    color: #ffffff;
-    padding: 30px 0 20px;
     max-width: 953px;
-    height: 356px;
-    margin-top: 100px;
+    margin: 205px 0;
+    color: #fff;
 }
-button {
-    width: 297px;
-    height: 53px;
-    top: 598px;
-    left: 240px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    opacity: 0px;
-    margin-top: 50px;
-    text-align: center;
-    color: #115793; 
-    font-size: 18px; 
-    line-height: 27px;
-    font-weight: 500;
-    border: none;
-}
-.bottom {
-  display: flex;
-  align-items: center;
+
+.center h1 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 120%;
 
 }
-.circle {
-    width: 84px;
+
+.center p {
+    margin: 20px 0 50px;
+    line-height: 150%;
+    max-width: 831px;
+}
+
+.center a {
+    display: block;
+    max-width: 297px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px 24px;
+    line-height: 150%;
+    color: #115793;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.round {
     height: 84px;
+    width: 84px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
@@ -88,41 +95,98 @@ button {
     margin-right: 20px;
 }
 
+.bottom span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.gift .container {
+    max-width: 1440px;
+    border: 1px solid white;
+    margin-top: 100px;
+   
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.block1 {
+    margin: 10px;
+    max-width: 832px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.block {
+    width: 345px;
+    height: 216px;
+    background-color: #e6f9ff;
+    border-radius: 10px;
+}
+
+
+.gift-item {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.block p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;  
+    max-width: 295px;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-height: 72px;
+    display: flex;
+    align-items:center
+}
+.block img {
+    padding-top: 25px;
+    padding-left: 25px;
+}
 .slovo {
     color: #ffffff;
     margin: 0;
-    /* padding-left: 50px; */
+    padding-left: 50px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
 }
-.center a{
-    display: block;
-    max-width: 297px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    padding: 20px 24px;
-    line-height: 150%;
-    color: #115793;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
-}
-.gift .container{
-    border: 1px solid blue;
+.gift .container {
+    border: 1px solid white;
 }
 .block{
     height: 200px;
-    background-color: red;
+    background-color: #e6f9ff;
 }
-
-.gift-row{
+.gift-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 60px -10px -10px -10px;
+}
+.gift-item {
+    width: 24%;
 }
 
-.gift_item{
-    width: 24%;
+.footer{
+    background-color: black;
+    padding: 30px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    text-decoration: none;
 }
