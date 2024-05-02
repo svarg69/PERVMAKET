@@ -101,7 +101,67 @@ body {
     line-height: 30px;
 }
 
-.gift .container {
+
+.gift .container{
+    border: 1px solid black;
+        
+}
+.gift{
+    padding: 100px 0;
+}
+
+.gift .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+.gift .item-container{
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.gift .item {
+    padding: 25px 15px 25px 25px;
+    border-radius: 10px;
+    background-color: #e6f9ff;
+    height: 100%;
+    box-sizing: border-box;
+}
+.gift .item-icon{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #00aeef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gift p{
+    min-height: 81px;
+    align-items: center;
+    font-size: 18px;
+}
+
+@media (max-width:1024px) {
+    .gift .item-container{
+        width: 50%;
+        /* паддинги выставить 
+        ракета вставить отдельной картинкой
+        на мобилке флекс дирекшн колумн под адаптив
+        или для ленивых в медиазапросе бэкграунд с другой картинкой уже со смещенной ракетой*/
+    }
+}
+
+@media (max-width:576px) {
+    .gift .item-container{
+        width: 100%;
+        
+    }
+}
+
+/* .gift .container {
     max-width: 1440px;
     border: 1px solid white;
     margin-top: 100px;
@@ -157,8 +217,8 @@ body {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-}
-.gift .container {
+} */
+/* .gift .container {
     border: 1px solid white;
 }
 .block{
@@ -173,8 +233,13 @@ body {
 }
 .gift-item {
     width: 24%;
-}
+} */
 
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 
@@ -194,3 +259,37 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+/* @media (max-width:1366px) {
+    .center h1{
+        font-size: 30px;
+    }
+     media.css лучше пока подключать отдельным файлом из папки медиа и там писать весь адаптив
+}
+@media (max-width:576px) {
+    .header{
+        flex-direction: column;
+    }
+} */
+/* @media (orientation:portair){
+проверяет в какой ориентации телефон или :landscape
+} */
+/* @media (print){
+использует стили при попытке распечатать сайт
+} */
+
+/* смотрим сначала какие размеры для адаптива,
+дальше смотрим на ширину контейнера общего
+делаем десктопную версию
+можно делать по блочно - сделали блок, прописали адаптив.
+МОжно полностью сделать а затем прописать всем медиа адаптив
+Просмотреть критические точки - 1366 px наприемр, проверить что на них ничего не разъехалось.
+видим что на какой то ширине не влезает что то - 
+пишим медиа запрос@media на эту ширину 
+обычно если небольшое уменьшение ширины то только отступы уменьшить и будет по макету
+если верстка начинает ломаться, отмечаем этот размер и от него начинаем адаптивить
+все лишнее на адаптиве скрываем через дисплэй нон, наприер стрелку убрать чтоб ракета сместилась вниз
+див класс=хедер хедер--блэк задать два класса - для многостраничника
+лямда тест - эмулятор для теста на мобилках
+
+ */
