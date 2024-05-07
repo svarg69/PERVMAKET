@@ -17,13 +17,37 @@ body {
 }
 
 .hero {
-    background-image: url(../images/herobg.jpg);
+    background-color:#16C7FF;
     background-size: cover;
     min-height: 100vh;
     padding-bottom: 60px;
     box-sizing: border-box;
+    position: relative;
+
 }
 
+.hero:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/heroafter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .container{
+    position: relative;
+    z-index: 100;
+}
+.hero-img{
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+}
 .header {
     padding: 30px 0 20px;
     border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
@@ -102,10 +126,6 @@ body {
 }
 
 
-.gift .container{
-    border: 1px solid black;
-        
-}
 .gift{
     padding: 100px 0;
 }
@@ -143,7 +163,18 @@ body {
     align-items: center;
     font-size: 18px;
 }
+.section-head{
+    margin-bottom: 60px;
+    max-width: 832px;
+}
 
+.section-head h2{
+    color: #1f1f1f;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 500;
+    margin: 0;
+}
 @media (max-width:1024px) {
     .gift .item-container{
         width: 50%;
@@ -239,10 +270,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 240px;
+    padding-right: 240px;
+    
 }
-
-
-
+.zagolovok{
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.block_table p{
+    background-color: #e6f9ff;
+    border-radius: 5%;
+}
+ .block_table{
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+ }
 
 .footer{
     background-color: black;
@@ -250,6 +296,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 240px;
+    padding-right: 240px;
+
     
 }
 .footer a {
@@ -291,5 +340,57 @@ body {
 все лишнее на адаптиве скрываем через дисплэй нон, наприер стрелку убрать чтоб ракета сместилась вниз
 див класс=хедер хедер--блэк задать два класса - для многостраничника
 лямда тест - эмулятор для теста на мобилках
-
+при адаптиве - ракета когда замечаем что начинает ехать вниз - ставим ей позишн статик чтоб она рухнул вниз?
  */
+
+.section-head.white h2,.section-head.white p{
+color: #fff;
+}
+.greysec{
+    background-color: #DBDBDB;
+    padding: 100px 0;
+
+}
+.adv{
+    padding: 55px 50px;
+    background-color: #16C7FF;
+    border-radius: 10px;
+
+}
+.bonuses{
+    padding: 71px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.icon{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #00aeef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+
+}
+.bonuses .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+}
+.bonuses-item{
+    display: flex;
+}
+.bonuses-item p{
+    margin: 0;
+}
+.form a{
+    color: #fff;
+}
+.form p{
+    color: #fff;
+}
