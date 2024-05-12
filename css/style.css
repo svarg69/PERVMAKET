@@ -9,7 +9,10 @@ body {
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
+button,input{
+    appearance: none;
 
+}
 .container {
     max-width: 1440px;
     width: 96%;
@@ -17,36 +20,35 @@ body {
 }
 
 .hero {
-    background-color:#16C7FF;
-    background-size: cover;
+    /* background-image: url(../images/hero.jpg);
+    background-size: cover; */
+    background-color: #16C7FF;
     min-height: 100vh;
     padding-bottom: 60px;
     box-sizing: border-box;
     position: relative;
-
 }
 
 .hero:after{
     content: '';
     height: 100%;
-    width: 100%;
-    background-image: url(../images/heroafter.png);
+    width: 62.2%;
+    background-image: url(../images/hero-after.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
 }
-
 .hero .container{
     position: relative;
     z-index: 100;
 }
 .hero-img{
     position: absolute;
-    right: -100px;
-    bottom: 0;
+    right: -64px;
+    bottom: -40px;
 }
 .header {
     padding: 30px 0 20px;
@@ -86,6 +88,7 @@ body {
     margin: 20px 0 50px;
     line-height: 150%;
     max-width: 831px;
+
 }
 
 .center a {
@@ -125,13 +128,28 @@ body {
     line-height: 30px;
 }
 
+.gift .container {
+    border: 1px solid white;
+}
+
+.gift-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    /* justify-content: space-between; */
+}
+
+.gift-item {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 .gift{
     padding: 100px 0;
 }
-
-.gift .row {
-    display: flex;
+.gift .row{
+    display: flex;  
     flex-wrap: wrap;
     margin: -10px;
 }
@@ -139,20 +157,19 @@ body {
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
-
 }
-.gift .item {
-    padding: 25px 15px 25px 25px;
-    border-radius: 10px;
-    background-color: #e6f9ff;
+.gift .item{
     height: 100%;
+    padding: 25px;
     box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #E6F9FF;
 }
 .gift .item-icon{
     height: 65px;
     width: 65px;
     border-radius: 50%;
-    background-color: #00aeef;
+    background-color: #00AEEF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,136 +177,241 @@ body {
 }
 .gift p{
     min-height: 81px;
+    display: flex;
     align-items: center;
-    font-size: 18px;
 }
+
 .section-head{
     margin-bottom: 60px;
     max-width: 832px;
 }
-
 .section-head h2{
-    color: #1f1f1f;
+    color: #1F1F1F;
     font-size: 40px;
     line-height: 130%;
     font-weight: 500;
     margin: 0;
 }
-@media (max-width:1024px) {
-    .gift .item-container{
-        width: 50%;
-        /* паддинги выставить 
-        ракета вставить отдельной картинкой
-        на мобилке флекс дирекшн колумн под адаптив
-        или для ленивых в медиазапросе бэкграунд с другой картинкой уже со смещенной ракетой*/
-    }
+.section-head.white h2,.section-head.white p{
+    color: #fff;
 }
-
-@media (max-width:576px) {
-    .gift .item-container{
-        width: 100%;
-        
-    }
-}
-
-/* .gift .container {
-    max-width: 1440px;
-    border: 1px solid white;
-    margin-top: 100px;
-   
-}
-.container{
+.table {
     display: flex;
     flex-wrap: wrap;
-   
+    justify-content: space-between;
+    margin: 0 -10px 100px -10px;
+
 }
-
-
-.block1 {
-    margin: 10px;
-    max-width: 832px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 130%;
-}
-
-.block {
-    width: 345px;
-    height: 216px;
-    background-color: #e6f9ff;
+.block_table{
+    background-color: white;
+    width: 31%;
+    border: 1px solid white;
     border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
-
-
-.gift-item {
-    width: 25%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.block p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;  
-    max-width: 295px;
-    padding-left: 25px;
-    padding-right: 25px;
-    min-height: 72px;
-    display: flex;
-    align-items:center
-}
-.block img {
-    padding-top: 25px;
-    padding-left: 25px;
-}
-.slovo {
-    color: #ffffff;
-    margin: 0;
-    padding-left: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-} */
-/* .gift .container {
-    border: 1px solid white;
-}
-.block{
-    height: 200px;
-    background-color: #e6f9ff;
-}
-.gift-row {
+.background {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 60px -10px -10px -10px;
-}
-.gift-item {
-    width: 24%;
-} */
-
-.table{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 240px;
-    padding-right: 240px;
-    
-}
-.zagolovok{
-    padding-left: 240px;
-    padding-right: 240px;
 }
 .block_table p{
-    background-color: #e6f9ff;
+    background-color: #E6F9FF;
     border-radius: 5%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 415px;
+    min-height: 136px; /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
+    display: flex;
+    align-items: center;
+    margin: 20px 30px 20px 22px;
+    padding: 0 20px;
 }
- .block_table{
-    width: 33%;
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    padding: 10px;
- }
+.block_table h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+ul {
+    list-style-type:none;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+li {
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+li::before{
+    content: '\25CF';
+    color: #00AEEF;
+    padding-right: 22px;
+}
 
+.grey-section{
+    background-color: #F7F9FC;
+    padding: 100px 0;
+}
+
+.offer{
+    padding: 50px;
+    background-color: #16C7FF;
+    border-radius: 10px;
+    position: relative;
+}
+.offer .left{
+    width: 60%;
+}
+.block1_white {
+    display: flex;
+    justify-content: space-between;
+
+}
+.left_white {
+    color: #ffffff;
+    max-width: 781px;
+    /* border: 1px solid black; */
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.left_white h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin: 0 0 20px 0;
+}
+.left_white p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+}
+.cloud-left {
+    position: absolute;
+    top: 54px;
+    left: 872px;
+}
+.cloud-right {
+    position: absolute;
+    top: 63px;
+    left: 1043px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    /* border: 1px solid black; */
+    margin-right: 40px;
+    width: 762px;
+}
+.right {
+    /* border: 1px solid black; */
+    width: 538px;
+}
+.bonuses{
+    padding: 71px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-height: 362px;
+    box-sizing: border-box;
+}
+.bonuses-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0 0 40px 0;
+}
+.bonuses .grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px 30px;
+}
+.bonuses-item{
+    display: flex;
+    
+}
+.bonuses-item .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #00AEEF;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bonuses-item  p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+input::placeholder{
+    color: #1F1F1F;
+    padding-left: 20px;
+}
+input{
+    height: 60px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E9F2FF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.form p, a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 400px;
+    margin-bottom: 27px;
+}
+.form button {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    width: 224px;
+    height: 53px; 
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.butt {
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    line-height: 150%;
+    font-size: 18px;
+    color: #115793;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0;
+}
+
+@media (max-width:1024px){
+    .gift .item-container{
+        width: 50%;
+    }
+}
+
+@media (max-width:576px){
+    .gift .item-container{
+        width: 100%;
+    }
+}
 .footer{
     background-color: black;
     padding: 30px 0 20px;
@@ -343,54 +465,3 @@ body {
 при адаптиве - ракета когда замечаем что начинает ехать вниз - ставим ей позишн статик чтоб она рухнул вниз?
  */
 
-.section-head.white h2,.section-head.white p{
-color: #fff;
-}
-.greysec{
-    background-color: #DBDBDB;
-    padding: 100px 0;
-
-}
-.adv{
-    padding: 55px 50px;
-    background-color: #16C7FF;
-    border-radius: 10px;
-
-}
-.bonuses{
-    padding: 71px 40px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-.icon{
-    height: 65px;
-    width: 65px;
-    border-radius: 50%;
-    background-color: #00aeef;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    margin-right: 20px;
-}
-.row{
-    display: flex;
-
-}
-.bonuses .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px 30px;
-}
-.bonuses-item{
-    display: flex;
-}
-.bonuses-item p{
-    margin: 0;
-}
-.form a{
-    color: #fff;
-}
-.form p{
-    color: #fff;
-}
