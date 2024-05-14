@@ -316,8 +316,9 @@ li::before{
     padding: 71px 40px;
     background-color: #fff;
     border-radius: 10px;
-    max-height: 362px;
+    /* max-height: 362px; */
     box-sizing: border-box;
+
 }
 .bonuses-title {
     font-weight: 500;
@@ -405,6 +406,10 @@ input{
     .gift .item-container{
         width: 50%;
     }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:576px){
@@ -464,4 +469,49 @@ input{
 лямда тест - эмулятор для теста на мобилках
 при адаптиве - ракета когда замечаем что начинает ехать вниз - ставим ей позишн статик чтоб она рухнул вниз?
  */
+.tableeee{
+    margin-bottom: 100px;
+}
 
+ .free_consult {
+    max-width: 953px;
+    color: #fff;
+    max-width: 1440px;
+    width: 96%;
+    margin: 0 auto;
+    background-color: #16C7FF;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.free_consult h1 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 120%;
+
+}
+
+.free_consult p {
+    margin: 20px 0 50px;
+    line-height: 150%;
+    max-width: 831px;
+
+}
+
+.free_consult a {
+    display: block;
+    max-width: 297px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px 24px;
+    line-height: 150%;
+    color: #115793;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+
+/* нормалайз сиэсэс качаем и подключаем через линк в хэде выше чем наш стайл сиэсэсэ и так же есть хард сиэсэс обнуляет всё нахрен */
