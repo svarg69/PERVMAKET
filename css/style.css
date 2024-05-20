@@ -4,15 +4,22 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 18px;
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
-button,input{
+
+button,
+input {
     appearance: none;
 
 }
+
 .container {
     max-width: 1440px;
     width: 96%;
@@ -29,7 +36,7 @@ button,input{
     position: relative;
 }
 
-.hero:after{
+.hero:after {
     content: '';
     height: 100%;
     width: 62.2%;
@@ -41,15 +48,18 @@ button,input{
     bottom: 0;
     right: 0;
 }
-.hero .container{
+
+.hero .container {
     position: relative;
     z-index: 100;
 }
-.hero-img{
+
+.hero-img {
     position: absolute;
     right: -64px;
     bottom: -40px;
 }
+
 .header {
     padding: 30px 0 20px;
     border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
@@ -145,27 +155,31 @@ button,input{
     box-sizing: border-box;
 }
 
-.gift{
+.gift {
     padding: 100px 0;
 }
-.gift .row{
-    display: flex;  
+
+.gift .row {
+    display: flex;
     flex-wrap: wrap;
     margin: -10px;
 }
-.gift .item-container{
+
+.gift .item-container {
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
 }
-.gift .item{
+
+.gift .item {
     height: 100%;
     padding: 25px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #E6F9FF;
 }
-.gift .item-icon{
+
+.gift .item-icon {
     height: 65px;
     width: 65px;
     border-radius: 50%;
@@ -175,26 +189,31 @@ button,input{
     justify-content: center;
     margin-bottom: 20px;
 }
-.gift p{
+
+.gift p {
     min-height: 81px;
     display: flex;
     align-items: center;
 }
 
-.section-head{
+.section-head {
     margin-bottom: 60px;
     max-width: 832px;
 }
-.section-head h2{
+
+.section-head h2 {
     color: #1F1F1F;
     font-size: 40px;
     line-height: 130%;
     font-weight: 500;
     margin: 0;
 }
-.section-head.white h2,.section-head.white p{
+
+.section-head.white h2,
+.section-head.white p {
     color: #fff;
 }
+
 .table {
     display: flex;
     flex-wrap: wrap;
@@ -202,7 +221,8 @@ button,input{
     margin: 0 -10px 100px -10px;
 
 }
-.block_table{
+
+.block_table {
     background-color: white;
     width: 31%;
     border: 1px solid white;
@@ -210,23 +230,28 @@ button,input{
     padding: 0 10px;
     margin-bottom: 20px;
 }
+
 .background {
     display: flex;
     flex-wrap: wrap;
 }
-.block_table p{
+
+.block_table p {
     background-color: #E6F9FF;
     border-radius: 5%;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    max-width: 415px;
-    min-height: 136px; /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
+    /* max-width: 415px; */
+    min-height: 136px;
+    /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
     display: flex;
     align-items: center;
     margin: 20px 30px 20px 22px;
-    padding: 0 20px;
+    padding: 10px 20px; /*добавили 10 вместо 0*/
+    box-sizing: border-box;
 }
+
 .block_table h3 {
     font-weight: 500;
     font-size: 24px;
@@ -234,42 +259,51 @@ button,input{
     margin-top: 30px;
     margin-left: 30px;
 }
-ul {
-    list-style-type:none;
+
+.block_table ul {
+    list-style-type: none;
     padding-left: 30px;
     margin-bottom: 30px;
 }
-li {
-    margin-bottom: .5em;
+
+.block_table li {
+    /* margin-bottom: .5em; */ /*паддинг родителю*/
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
 }
-li::before{
+
+.block_table li::before {
     content: '\25CF';
     color: #00AEEF;
     padding-right: 22px;
+    /* display: flex; */
 }
 
-.grey-section{
+.grey-section {
     background-color: #F7F9FC;
     padding: 100px 0;
 }
 
-.offer{
+.offer {
     padding: 50px;
     background-color: #16C7FF;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 100px;
+
 }
-.offer .left{
+
+.offer .left {
     width: 60%;
 }
+
 .block1_white {
     display: flex;
     justify-content: space-between;
 
 }
+
 .left_white {
     color: #ffffff;
     max-width: 781px;
@@ -277,65 +311,78 @@ li::before{
     margin-right: 40px;
     margin-bottom: 40px;
 }
+
 .left_white h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
     margin: 0 0 20px 0;
 }
+
 .left_white p {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     margin: 0;
 }
+
 .cloud-left {
     position: absolute;
     top: 54px;
-    left: 872px;
+    left: 872px; /*измеить на правый*/
 }
+
 .cloud-right {
     position: absolute;
     top: 63px;
     left: 1043px;
 }
+
 .row {
     display: flex;
     justify-content: space-between;
 }
+
 .left {
     /* border: 1px solid black; */
     margin-right: 40px;
     width: 762px;
+
 }
+
 .right {
     /* border: 1px solid black; */
     width: 538px;
+
 }
-.bonuses{
+
+.bonuses {
     padding: 71px 40px;
     background-color: #fff;
     border-radius: 10px;
-    /* max-height: 362px; */
+    max-height: 362px;
     box-sizing: border-box;
-
 }
+
 .bonuses-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
     margin: 0 0 40px 0;
 }
-.bonuses .grid{
+
+.bonuses .grid {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px 30px;
 }
-.bonuses-item{
+
+.bonuses-item {
     display: flex;
-    
+
 }
-.bonuses-item .icon{
+
+.bonuses-item .icon {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -347,30 +394,36 @@ li::before{
     justify-content: center;
 
 }
-.bonuses-item  p{
+
+.bonuses-item p {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 }
-input::placeholder{
+
+input::placeholder {
     color: #1F1F1F;
     padding-left: 20px;
 }
-input{
+
+input {
+    outline: 0;
     height: 60px;
     width: 100%;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */ /*можно убрать*/
     border: 2px solid #E9F2FF;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.form p, a {
+
+.form p,
+a {
     color: #ffffff;
     font-weight: 400;
     font-size: 14px;
@@ -378,16 +431,19 @@ input{
     max-width: 400px;
     margin-bottom: 27px;
 }
+
 .form button {
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px 24px;
     width: 224px;
-    height: 53px; 
+    height: 53px;
     background-color: #ffffff;
     display: flex;
-    align-items: center;
+    align-items: center; /*coursor:pointer*/
+    /*height 100%, display flex, flex-direction:column, margon top auto*/
 }
+
 .butt {
     display: block;
     box-sizing: border-box;
@@ -402,32 +458,262 @@ input{
     margin: 0;
 }
 
-@media (max-width:1024px){
-    .gift .item-container{
-        width: 50%;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
+
+.container__price{
+    max-width: 1440px;
+    width: 96%;
+    margin: 0 auto;
+}
+.container__price h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+}
+.price__select{
+    display: flex;
+    align-items: center;
+    max-width: 467px;
+    margin-bottom: 40px;
+}
+.price__select p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-right: 20px;
+
+}
+.price__select select{
+    background: #e6f9ff;
+    border-radius: 5px;
+    border: none;
+    width: 178px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    padding-left: 20px;
+}
+.price__columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.price__base{
+    width: 24%;
+}
+.price__standart{
+    width: 24%;
+}
+.price__proffesional{
+    width: 24%;
+}
+.price__enterprize{
+    width: 24%;
+}
+.price__name{
+    max-width: 345px;
+    background-color: #00aeef;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.price__name h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    padding: 17px 0;
+    margin: 0;
+}
+.price__details{
+    max-width: 345px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+}
+.price__details h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
+.price__details h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: #115793;
+    margin: 0 0 40px 0;
+}
+.price__details p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.details {
+    list-style-type: none;
+   padding: 0 10px;
+}
+.details li {
+    border-top: 1.50px solid rgba(31, 31, 31, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 20px 10px;
+}
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: #115793;
+}
+.price__function{
+    max-width: 727px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.price__function p{
+    margin: 0 20px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 183px;
+}
+.function {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.function p {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.function1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.function1 p {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.free_consult {
+    display: block;
+    box-sizing: border-box;
+    background-color: #16C7FF;
+    max-width: 1440px;
+    width: 96%;
+    margin: 0 auto;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
-@media (max-width:576px){
-    .gift .item-container{
-        width: 100%;
-    }
+.free_consult h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 130%;
+    max-width: 579px;
 }
-.footer{
-    background-color: black;
-    padding: 30px 0 20px;
+
+.free_consult p {
+    margin: 20px 0 50px;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 579px;
+}
+.free_consult::after{
+    content: '';
+    height: 100%;
+    width: 62.2%;
+    background-image: url(../images/fon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.consult-link {
+    display: block;
+    max-width: 224px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #115793;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.rocket__small{
+    right: 64px;
+    bottom: 198px;
+    position: absolute;
+    filter: blur(5px);
+}
+.rocket__big{
+    position: absolute;
+    right: 273px;
+    bottom: 0;
+    z-index: 100;
+}
+.cloud__big{
+    right: 114px;
+    bottom: 41px;
+    position: absolute;
+    z-index: 100;
+}
+.cloud__small{
+    position: absolute;
+    right: 454px;
+    bottom: 265px;
+
+}
+
+.footer {
+    max-width: 1920px;
+    padding: 30px 240px 20px;
+    border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 240px;
-    padding-right: 240px;
-
-    
+    background-color: #1F1F1F;
+    margin-top: 100px;
+    /* flex: 0 0 auto; */
 }
+
 .footer a {
     font-weight: 500;
     font-size: 20px;
@@ -436,82 +722,38 @@ input{
     text-decoration: none;
 }
 
-/* @media (max-width:1366px) {
-    .center h1{
-        font-size: 30px;
-    }
-     media.css лучше пока подключать отдельным файлом из папки медиа и там писать весь адаптив
+.footer a+a {
+    margin-left: 40px;
 }
-@media (max-width:576px) {
-    .header{
+
+
+
+
+@media (max-width:1024px) {
+    .gift .item-container {
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
         flex-direction: column;
     }
-} */
-/* @media (orientation:portair){
-проверяет в какой ориентации телефон или :landscape
-} */
-/* @media (print){
-использует стили при попытке распечатать сайт
-} */
-
-/* смотрим сначала какие размеры для адаптива,
-дальше смотрим на ширину контейнера общего
-делаем десктопную версию
-можно делать по блочно - сделали блок, прописали адаптив.
-МОжно полностью сделать а затем прописать всем медиа адаптив
-Просмотреть критические точки - 1366 px наприемр, проверить что на них ничего не разъехалось.
-видим что на какой то ширине не влезает что то - 
-пишим медиа запрос@media на эту ширину 
-обычно если небольшое уменьшение ширины то только отступы уменьшить и будет по макету
-если верстка начинает ломаться, отмечаем этот размер и от него начинаем адаптивить
-все лишнее на адаптиве скрываем через дисплэй нон, наприер стрелку убрать чтоб ракета сместилась вниз
-див класс=хедер хедер--блэк задать два класса - для многостраничника
-лямда тест - эмулятор для теста на мобилках
-при адаптиве - ракета когда замечаем что начинает ехать вниз - ставим ей позишн статик чтоб она рухнул вниз?
- */
-.tableeee{
-    margin-bottom: 100px;
 }
 
- .free_consult {
-    max-width: 953px;
-    color: #fff;
-    max-width: 1440px;
-    width: 96%;
-    margin: 0 auto;
-    background-color: #16C7FF;
-    margin-bottom: 100px;
-    border-radius: 10px;
+@media (max-width:576px) {
+    .gift .item-container {
+        width: 100%;
+    }
 }
 
-.free_consult h1 {
-    margin: 0;
-    font-size: 50px;
-    line-height: 120%;
-
+@media (max-width:1024px) {
+    .table .block_table {
+        width: 47%;
+    }
 }
 
-.free_consult p {
-    margin: 20px 0 50px;
-    line-height: 150%;
-    max-width: 831px;
-
+@media (max-width:576px) {
+    .offer {
+        width: 50%;
+    }
 }
-
-.free_consult a {
-    display: block;
-    max-width: 297px;
-    box-sizing: border-box;
-    background-color: #fff;
-    padding: 20px 24px;
-    line-height: 150%;
-    color: #115793;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-
-
-/* нормалайз сиэсэс качаем и подключаем через линк в хэде выше чем наш стайл сиэсэсэ и так же есть хард сиэсэс обнуляет всё нахрен */
